@@ -13,7 +13,7 @@ site:
     identity:
       version: v1
   pagination:
-    max: 5
+    max: 1
     path: page
   title: Hello ici ou là.
 theme: hyde
