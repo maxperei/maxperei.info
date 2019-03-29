@@ -1,33 +1,19 @@
 site:
-  title: "Cecil"
-  baseline: "Your blog's butler."
-  baseurl: '/'
+  baseline: Je suis Maxime Pereira-Lima et ceci est mon réceptacle virtuel.
+  baseurl: /
   canonicalurl: true
-  description: "Starter blog, with Netlify CMS."
-  pagination:
-    max: 5
-    path: 'page'
   date:
-    format: 'j F Y'
-    timezone: 'Europe/Paris'
+    format: j F Y
+    timezone: Europe/Paris
+  description: 'Développeur Web, mobile & audiophile.'
   netlify:
     cms:
-      path: 'admin'
-      version: 'latest'
+      path: admin
+      version: latest
     identity:
-      version: 'v1'
-  output:
-    formats:
-      netlify_redirects:
-        mediatype: 'text/plain'
-        extension: ''
-  virtualpages:
-    admin:
-      layout: admin/index
-      output: html
-      title: 'Content Manager (Netlify CMS)'
-    home:
-      redirect: /
-    _redirects:
-      output: netlify_redirects
-theme: 'hyde'
+      version: v1
+  pagination:
+    max: 5
+    path: page
+  title: Hello ici ou là.
+theme: hyde
