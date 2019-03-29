@@ -1,19 +1,33 @@
 site:
-  baseline: Je suis Maxime Pereira-Lima et ceci est mon réceptacle virtuel.
+  title: 'Hello ici ou là.'
+  baseline: 'Je suis Maxime Pereira-Lima et ceci est mon réceptacle virtuel.'
   baseurl: /
   canonicalurl: true
+  description: 'Développeur Web, mobile & audiophile.'
+  pagination:
+    max: 1
+    path: page
   date:
     format: j F Y
     timezone: Europe/Paris
-  description: 'Développeur Web, mobile & audiophile.'
   netlify:
     cms:
       path: admin
       version: latest
     identity:
       version: v1
-  pagination:
-    max: 1
-    path: page
-  title: Hello ici ou là.
+  output:
+    formats:
+      netlify_redirects:
+        mediatype: 'text/plain'
+        extension: ''
+  virtualpages:
+    admin:
+      layout: admin/index
+      output: html
+      title: 'Content Manager (Netlify CMS)'
+    home:
+      redirect: /
+    _redirects:
+      output: netlify_redirects
 theme: hyde
