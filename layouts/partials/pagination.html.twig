@@ -1,0 +1,15 @@
+{% if page.pagination is defined %}
+{% set pagination = page.pagination %}
+      <div class="pagination">
+{% if pagination.links.next is defined %}
+        <a class="pagination-item older" href="{{ url(site.pages[pagination.links.next]) }}">Reculer</a>
+{% else %}
+        <span class="pagination-item older">Reculer</span>
+{% endif %}
+{% if pagination.links.prev is defined %}
+        <a class="pagination-item newer" href="{{ url(site.pages[pagination.links.prev]) }}">Avancer</a>
+{% else %}
+        <span class="pagination-item newer">Avancer</span>
+{% endif %}
+      </div>
+{% endif %}

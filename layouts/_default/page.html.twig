@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
+<head>
+    {% block head %}
+        <link href="https://gmpg.org/xfn/11" rel="profile">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>{% block title %}{{ page.title }} &middot; {{ site.title }}{% endblock title %}</title>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144"
+              href="{{ url('apple-touch-icon-144-precomposed.png') }}">
+        <link rel="shortcut icon" href="{{ url('favicon.ico') }}">
+    {% block head_css %}
+    <link rel="stylesheet" href="{{ url(minify('css/style.css')) }}">
+    <link rel="stylesheet" href="{{ url(toCSS('scss/main.scss')) }}">
+    {% endblock head_css %}
+        {% for alternate in page.alternates %}
+        <link rel="{{ alternate.rel }}" type="{{ alternate.type }}" title="{{ alternate.title }}"
+              href="{{ url(page, {format: alternate.format, canonical: true}) }}">
+        {% endfor %}
+        <link rel="stylesheet" href="{{ url(minify('css/monokai-sublime.css')) }}">
+        <script src="{{ url('js/highlight-9.13.1.min.js') }}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+        <script src="https://use.fontawesome.com/9f8171b0bd.js"></script>
+    {% endblock head %}
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div class="sidebar">
+    <div class="container sidebar-sticky">
+        {% block sidebar %}
+            <div class="sidebar-about">
+                <h1><a href="{{ url() }}">{{ site.title }}</a></h1>
+                <p class="lead">
+                    {{ site.baseline }}
+                    <span class="desc">{{ site.description }}</span>
+                </p>
+            </div>
+            <nav class="sidebar-nav">
+                {% if site.menus.main is defined %}
+                    {% for menu in site.menus.main|sortByWeight %}
+                        <a class="sidebar-nav-item{% if url(page) == url(menu.url) %} active{% endif %}"
+                           href="{{ url(menu.url) }}">{{ menu.name }}</a>
+                    {% endfor %}
+                {% endif %}
+            </nav>
+            <nav class="sidebar-social">
+                {% for menu in site.menus.social|sortByWeight %}
+                    <span><a class="sidebar-social-item" href="{{ menu.url }}"><span class="icon icon--{{ menu.id }} fa fa-{{ menu.id }}" aria-hidden="true"></span></a></span>
+                    {% if not loop.last %}&middot;{% endif %}
+                {% endfor %}
+            </nav>
+        {% endblock sidebar %}
+    </div>
+</div>
+<div class="content container">
+    {% block content %}
+        <h1 class="page-title">{{ page.title }}</h1>
+        {{ page.content }}
+    {% endblock %}
+</div>
+<script src="{{ url('js/typewriter.js') }}"></script>
+<script src="{{ url('js/particles.js') }}"></script>
+</body>
+</html>
