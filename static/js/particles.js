@@ -2,8 +2,8 @@ var canvas = document.getElementById("canvas");
 var sidebar = document.querySelector('.sidebar');
 
 function resize(){
-    canvas.width = sidebar.offsetWidth;
-    canvas.height = sidebar.offsetHeight;
+    canvas.width = sidebar.clientWidth;
+    canvas.height = sidebar.clientHeight;
 }
 resize();
 window.onresize = resize;

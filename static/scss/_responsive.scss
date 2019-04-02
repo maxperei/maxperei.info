@@ -29,3 +29,20 @@
     text-align: center;
   }
 }
+
+@media (min-width:24em){
+  .about {
+    &-cv {
+      .bloc-doc {
+        &-tool {
+          .button--about {
+            margin: 0 .5rem;
+            .button__icon {
+              left: -30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

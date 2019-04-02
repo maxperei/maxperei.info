@@ -1,5 +1,5 @@
 .about {
-  .about-cv {
+  &-cv {
     .bloc-doc {
       border: 1px solid $gray-300;
       border-radius: 4px;
@@ -33,7 +33,6 @@
           overflow: hidden;
           min-width: 1.25rem;
           min-height: 1.25rem;
-          margin: 0 .5rem;
           transition: background-color 300ms;
           &:hover {
             border-color: $primary;
@@ -75,7 +74,7 @@
             position: absolute;
             top: -10px;
             width: 100%;
-            left: -30px;
+            left: -25px;
             color: $primary;
             -webkit-transform: translate3d(0, -100%, 0);
             transform: translate3d(0, -100%, 0);
