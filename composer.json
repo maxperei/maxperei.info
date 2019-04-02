@@ -1,0 +1,17 @@
+{
+  "name": "cecil/starter-blog",
+  "description": "Your blog's butler.",
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Arnaud Ligny",
+      "email": "arnaud@ligny.org",
+      "homepage": "http://narno.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "cecil/theme-hyde": "^1.13"
+  }
+}

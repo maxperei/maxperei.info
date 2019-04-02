@@ -1,0 +1,104 @@
+html {
+  font-family: $font-family-base;
+}
+
+canvas {
+  position: absolute;
+  z-index: -1;
+}
+
+a {
+  color: $secondary;
+}
+
+.sidebar {
+  background: transparent;
+  background: $black;
+  a {
+    color: $primary;
+  }
+  h1 {
+    font-family: $font-family-serif;
+    text-shadow: -1px 0 $primary, 0 1px $primary, 1px 0 $primary, 0 -1px $primary;
+    letter-spacing: 1px;
+    display: inline-block;
+    a {
+      color: $black;
+      &:hover {
+        text-decoration: none;
+      }
+      span {
+        text-shadow: none;
+        padding-left: 3px;
+        color: $primary;
+        font: {
+          family: $font-family-base;
+          weight: 700;
+          size: 1.25rem;
+        }
+      }
+    }
+    .typed-cursor {
+      color: $primary;
+      font-weight: 300;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+  .tooltip {
+    @extend a;
+    font-variant: all-small-caps;
+    &:hover {
+      text-decoration: underline;
+      position: relative;
+      top: 0;
+      cursor: crosshair;
+      + .desc {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.desc {
+  transition: all 300ms ease-in-out;
+  position: relative;
+  bottom: -50px;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  margin-top: 1rem;
+  font: {
+    family: $font-family-base;
+    weight: 500;
+    size: .95rem;
+  }
+}
+
+.post-date {
+  font: {
+    size: .75rem;
+  }
+}
+
+.content {
+  p {
+    font: {
+      family: $font-family-serif;
+      size: .95rem;
+    }
+    line-height: 1.5rem;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    padding-left: 5px;
+    font: {
+      family: $font-family-serif;
+      size: .95rem;
+    }
+  }
+}

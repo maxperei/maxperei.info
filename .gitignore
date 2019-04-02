@@ -1,0 +1,5 @@
+.idea/
+vendor/
+_site/
+.cecil/
+themes/*

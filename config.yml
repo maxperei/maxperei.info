@@ -1,0 +1,102 @@
+site:
+  title: 'M<span></span>'
+  baseline: "alias <span class='tooltip'>@maxperei</span> ; et ceci est mon espace virtuel"
+  baseurl: /
+  canonicalurl: true
+  description: 'Développeur web, mobile & audiophile'
+  menu:
+    main:
+      home:
+        id: 'index'
+        url: 'index'
+        name: 'Accueil'
+        weight: 1
+        enabled: false
+      work:
+        id: 'work'
+        url: 'work'
+        name: 'Projets'
+        weight: 9
+        enabled: false
+      about:
+        id: 'about'
+        url: 'about'
+        name: 'À propos'
+        weight: 100
+        enabled: false
+      blog:
+        id: 'blog'
+        url: 'blog'
+        name: 'Revues'
+        weight: 10
+        enabled: false
+      collection:
+        id: 'collection'
+        url: 'https://www.maxperei.info'
+        name: 'Collection'
+        weight: 11
+        enabled: false
+    social:
+      github:
+        id: 'github'
+        url: 'https://github.com/maxperei'
+        name: 'GitHub'
+        weight: 1
+      linkedin:
+        id: 'linkedin'
+        url: 'https://www.linkedin.com/in/maxperei'
+        name: 'LinkedIn'
+        weight: 2
+      twitter:
+        id: 'twitter'
+        url: 'https://twitter.com/max_perei'
+        name: 'Twitter'
+        weight: 3
+      behance:
+        id: 'behance'
+        url: 'https://www.behance.net/maxperei'
+        name: 'Behance'
+        weight: 4
+      stackoverflow:
+        id: 'stack-overflow'
+        url: 'https://stackoverflow.com/users/5517101/max-perei'
+        name: 'Stack Overflow'
+        weight: 5
+  pagination:
+    max: 6
+    path: page
+  date:
+    format: j M Y
+    timezone: Europe/Paris
+  netlify:
+    cms:
+      path: admin
+      version: latest
+    identity:
+      version: v1
+  output:
+    formats:
+      netlify_redirects:
+        mediatype: 'text/plain'
+        extension: ''
+      json:
+        mediatype: 'application/json'
+        extension: 'json'
+        exclude: ['redirect']
+      amp:
+        mediatype: 'text/html'
+        subpath: '/amp'
+        suffix: '/index'
+        extension: 'html'
+  virtualpages:
+    admin:
+      layout: admin/index
+      output: html
+      title: 'Content Manager (Netlify CMS)'
+    home:
+      redirect: /
+    index:
+      redirect: /about
+    _redirects:
+      output: netlify_redirects
+theme: hyde
