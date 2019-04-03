@@ -1,4 +1,4 @@
-@media (min-width:48em){
+@media (min-width:48em) {
   .sidebar {
     width: 20rem;
     &-sticky {
@@ -30,16 +30,13 @@
   }
 }
 
-@media (min-width:24em){
+@media (max-width:24em) {
   .about {
     &-cv {
       .bloc-doc {
-        &-tool {
-          .button--about {
-            margin: 0 .5rem;
-            .button__icon {
-              left: -30px;
-            }
+        a {
+          &:last-child {
+            display: none;
           }
         }
       }

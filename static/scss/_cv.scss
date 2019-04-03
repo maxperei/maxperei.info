@@ -6,6 +6,10 @@
       padding: .5rem 1rem 1rem;
       margin-bottom: 1rem;
       display: flex;
+      transition: all 300ms ease-in-out;
+      &:hover {
+        border-color: $black;
+      }
       &-header {
         .doc-title {
           font-size: 1.25rem;
@@ -27,18 +31,16 @@
         .button--about {
           position: relative;
           padding: .25rem .5rem;
+          margin: 0 .5rem;
           border-radius: 2px;
           border: 1px $secondary solid;
           display: inline-block;
           overflow: hidden;
-          min-width: 1.25rem;
-          min-height: 1.25rem;
-          transition: background-color 300ms;
+          transition: all 300ms ease-in-out;
           &:hover {
             border-color: $primary;
             background-color: $black;
             color: $black;
-            transition: all 0.3s ease-in-out;
             .button__icon {
               transform: translate3d(0, 0, 0);
             }
@@ -46,17 +48,15 @@
               opacity: 0;
               transform: translate3d(0, 100%, 0);
             }
-            &:before {
-              animation: anim-about-1 0.3s forwards ease-in;
-            }
           }
           &:before {
             content: '';
+            animation: anim-about-1 300ms forwards ease-in;
             position: absolute;
             left: -50%;
             width: 200%;
             height: 200%;
-            background: $black;
+            background: $white;
             top: -50%;
             z-index: -1;
             transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
@@ -72,32 +72,27 @@
           }
           .button__icon {
             position: absolute;
-            top: -10px;
-            width: 100%;
-            left: -25px;
+            top: .5rem;
+            left: .5rem;
             color: $primary;
-            -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -200%, 0);
           }
           > span,
           .button__icon {
-            padding: 1em 2em;
-            transition: transform 0.3s;
+            transition: transform 300ms;
             transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
           }
           &-up {
             &:before {
+              animation: anim-about-2 300ms forwards ease-in;
               transform: translate3d(0, 100%, 0) rotate3d(0, 0, 1, 10deg);
             }
             .button__icon {
-              transform: translate3d(0, 100%, 0);
+              transform: translate3d(0, 200%, 0);
             }
             &:hover {
               > span {
                 transform: translate3d(0, -100%, 0);
-              }
-              &:before {
-                animation: anim-about-2 0.3s forwards ease-in;
               }
             }
           }
@@ -109,25 +104,19 @@
 
 @keyframes anim-about-1 {
   50% {
-    -webkit-transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
     transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
-    -webkit-transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
     transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
   }
 }
 @keyframes anim-about-2 {
   50% {
-    -webkit-transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
     transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
-    -webkit-transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
     transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
   }
 }
