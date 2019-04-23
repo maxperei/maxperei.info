@@ -1,6 +1,6 @@
 site:
   title: 'M<span></span>'
-  baseline: "alias <span class='tooltip'>@maxperei</span> ; et ceci est mon espace virtuel"
+  baseline: "alias <span class='tooltip' draggable='true'>@maxperei</span> ; et ceci est mon espace virtuel"
   baseurl: /
   canonicalurl: true
   description: 'Développeur web, mobile & audiophile'

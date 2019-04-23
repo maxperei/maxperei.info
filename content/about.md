@@ -3,11 +3,11 @@ title: À propos
 published: true
 ---
 
-Ainsi la visite se poursuit, la finalité étant qu'à travers le cheminement — entre les différents plis de cet éventail — puisse être dévoilées les lignes directrices, les aspirations et les influences qui m'animent.
+Ainsi la navigation se poursuit, la finalité étant qu'à travers le cheminement — entre les différents plis de cet éventail — puisse être dévoilées les lignes directrices, les aspirations et les influences qui m'animent.
 
 Le but est également de laisser certains traits apparents : notamment le *goût* de la *perfection technique*, le *don de soi*, le *zèle* et la *joie* de mener à bien, étape par étape, un travail *rigoureux* et *méthodique*.
 
-En outre, cette plateforme se doit de refléter les qualités intrinsèques d'un __développeur__ web ; la soif de *compréhension*, la perspective d'un *renouveau* technologique et l'*enthousiame* devant la *complexité*.
+En outre, cette plateforme se devait de refléter les qualités intrinsèques d'un __développeur__ web ; la soif de *compréhension*, la perspective d'un *renouveau* technologique et l'*enthousiame* devant la *complexité*.
 
 <div style="text-align: center">* * *</div>  
 ___

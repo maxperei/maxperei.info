@@ -19,8 +19,8 @@
               href="{{ url(page, {format: alternate.format, canonical: true}) }}">
         {% endfor %}
         <link rel="stylesheet" href="{{ url(minify('css/monokai-sublime.css')) }}">
-        <script src="{{ url('js/highlight-9.13.1.min.js') }}"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+{#        <script src="{{ url('js/highlight-9.13.1.min.js') }}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>#}
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
         <link rel="stylesheet" href="{{ url(minify('css/font-awesome.css')) }}">
         <link rel="stylesheet" href="{{ url(minify('css/tech-font.css')) }}">
@@ -38,6 +38,7 @@
                     <span class="desc">{{ site.description }}</span>
                 </p>
             </div>
+            {% include 'partials/ascii.html.twig' %}
             <nav class="sidebar-nav">
                 {% if site.menus.main is defined %}
                     {% for menu in site.menus.main|sortByWeight %}
@@ -62,6 +63,7 @@
     {% endblock %}
 </div>
 <script src="{{ url('js/typewriter.js') }}"></script>
+<script src="{{ url('js/tooltip.js') }}"></script>
 <script src="{{ url('js/particles.js') }}"></script>
 </body>
 </html>

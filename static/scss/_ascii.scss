@@ -1,0 +1,35 @@
+.ascii-art{
+  text-align: center;
+  scale: 0;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+  pre {
+    background: transparent;
+    font-size: 6px;
+    line-height: 1.3;
+    padding: 0;
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
+.debounce {
+  animation-name: debounce;
+}
+
+@keyframes bounce {
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes debounce {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+  }
+}
