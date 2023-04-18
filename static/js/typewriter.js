@@ -19,7 +19,7 @@ var rewind = function () {
 logo
     .addEventListener("mouseenter", function (evt) {
         if (typed instanceof Typed) typed.destroy();
-        options.strings = ["axime Pereira-Lima"];
+        options.strings = ["axú Perê"];
         options.showCursor = true;
         typed = new Typed(target, options);
     });
