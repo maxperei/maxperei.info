@@ -1,0 +1,28 @@
+name: cecil
+
+on:
+    workflow_dispatch: ~
+    push:
+        branches:
+            - master
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        name: deploy static website
+        steps:
+            -   name: checkout
+                uses: actions/checkout@v2
+
+            -   run: curl -LO https://cecil.app/download/4.13.0/cecil.phar
+            -   run: chmod +x cecil.phar
+            -   run: php cecil.phar --version
+
+            -   name: build
+                run: php cecil.phar build
+
+            -   name: deploy
+                uses: JamesIves/github-pages-deploy-action@v3
+                with:
+                    REPOSITORY_NAME: maxperei/maxperei.github.io
+                    BRANCH: master
+                    FOLDER: _site
