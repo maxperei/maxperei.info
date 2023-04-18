@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
+<head>
+    <meta name="generator" content="Cecil" />
+            <link href="https://gmpg.org/xfn/11" rel="profile">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>robert haigh – creatures of the deep &middot; unseen worlds &middot;  Max Perei &middot; Développeur web, mobile & audiophile</title>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144"
+              href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+                    <link rel="canonical" type="text/html" title="HTML"
+              href="/blog/robert-haigh-creatures-of-the-deep/">
+                <link rel="stylesheet" href="/css/monokai-sublime.css">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+        <link rel="stylesheet" href="/css/font-awesome.css">
+        <link rel="stylesheet" href="/css/tech-font.css">
+    </head>
+<body>
+<canvas id="canvas"></canvas>
+<div class="sidebar">
+    <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                <h1><a href="/">M<span></span></a></h1>
+                <p class="lead">
+                    alias <span class='tooltip' draggable='true'>@maxperei</span> ; et ceci est mon espace virtuel
+                    <span class="desc">Développeur web, mobile & audiophile</span>
+                </p>
+            </div>
+            <div class="ascii-art" style="text-align: left;">
+    <pre>
+        <code>
+<span style="color:gray">
+                                                                .
+                                                          ..:-:</span><span style="color:#dfdaf1">+</span><span
+                    style="color:gray">::
+                                                      -</span><span style="color:#dfdaf1">+</span><span
+                    style="color:#00b49c">==-</span><span style="color:white">+</span><span style="color:#dfdaf1">=</span><span
+                    style="color:#00b49c">=</span><span style="color:#dfdaf1">=+</span><span style="color:white">*</span><span
+                    style="color:gray">-.
+                                                   :</span><span style="color:white">++++*++</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">*+</span><span style="color:#00b49c">-</span><span
+                    style="color:white">+</span><span style="color:#00b49c">=</span><span style="color:#dfdaf1">==</span><span
+                    style="color:gray">
+                                                .</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">*****#*</span><span style="color:#dfdaf1">+</span><span style="color:white">*++*</span><span
+                    style="color:#dfdaf1">++</span><span style="color:white">*</span><span style="color:#dfdaf1">+</span><span
+                    style="color:#00b49c">-</span><span style="color:gray">
+                                             :</span><span style="color:#00b49c">-=-</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">+*+**#*+**#*+**</span><span
+                    style="color:#dfdaf1">++</span><span style="color:gray">
+                                         .::</span><span style="color:#00b49c">=</span><span
+                    style="color:gray">-</span><span style="color:#00b49c">=</span><span style="color:#dfdaf1">==+</span><span
+                    style="color:white">*++*****+*#**++</span><span style="color:#dfdaf1">=+</span><span style="color:gray">
+                                     ..::-:</span><span style="color:#00b49c">=---</span><span style="color:#dfdaf1">++</span><span
+                    style="color:white">+</span><span style="color:#dfdaf1">+</span><span style="color:white">*</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">**##***+***</span><span
+                    style="color:#dfdaf1">=</span><span style="color:white">++</span><span style="color:gray">-
+                                ...  .:::::</span><span style="color:#00b49c">-</span><span
+                    style="color:gray">--</span><span style="color:#00b49c">=</span><span style="color:#dfdaf1">+++</span><span
+                    style="color:white">**##*#*#**#***+*+</span><span style="color:gray">-
+                                . . ...:.</span><span style="color:#00b49c">-</span><span
+                    style="color:gray">--</span><span style="color:#00b49c">=</span><span style="color:#dfdaf1">==++</span><span
+                    style="color:white">+*</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">****####**#**</span><span style="color:#dfdaf1">+</span><span style="color:gray">-.
+                                 .. ...::::</span><span style="color:#00b49c">-</span><span
+                    style="color:gray">-</span><span style="color:#00b49c">==</span><span style="color:#dfdaf1">+=++</span><span
+                    style="color:white">+##*#*#*#***</span><span style="color:#00b49c">=</span><span style="color:gray">-
+                                    .:..-</span><span style="color:#00b49c">-</span><span
+                    style="color:gray">:::--</span><span style="color:#dfdaf1">==++</span><span style="color:white">******##**</span><span
+                    style="color:#dfdaf1">=</span><span style="color:gray">:.</span><span style="color:#dfdaf1">=</span><span
+                    style="color:gray">..
+                                  .     ....:::</span><span style="color:#dfdaf1">=</span><span
+                    style="color:gray">-:-:-</span><span style="color:#00b49c">-</span><span style="color:#dfdaf1">=+</span><span
+                    style="color:white">**+**</span><span style="color:#00b49c">=</span><span style="color:white">*</span><span
+                    style="color:#dfdaf1">+</span><span style="color:gray">.--</span><span style="color:white">*</span><span
+                    style="color:gray">
+          .                 . .                 :.</span><span style="color:#00b49c">-</span><span
+                    style="color:gray">-::</span><span style="color:#00b49c">==</span><span style="color:#dfdaf1">=</span><span
+                    style="color:white">*#**++</span><span style="color:#00b49c">=</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">#**</span><span style="color:gray">
+            .             .         ...-::</span><span style="color:#dfdaf1">=</span><span
+                    style="color:#00b49c">=</span><span style="color:white">*</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">*</span><span style="color:#dfdaf1">=</span><span style="color:gray">   </span><span
+                    style="color:white">+</span><span style="color:gray">. ..-</span><span style="color:#dfdaf1">=</span><span
+                    style="color:white">+*+</span><span style="color:#dfdaf1">+</span><span style="color:white">***+#*</span><span
+                    style="color:gray">
+                              .  .:.:--..   .</span><span style="color:#dfdaf1">+</span><span style="color:gray">..:</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">*+</span><span style="color:#dfdaf1">=</span><span
+                    style="color:gray">.. .:</span><span style="color:#00b49c">=</span><span style="color:white">**</span><span
+                    style="color:#dfdaf1">=</span><span style="color:white">***#**</span><span style="color:gray">
+                              .. :.:..:-.-::</span><span style="color:#dfdaf1">=</span><span
+                    style="color:#00b49c">=</span><span style="color:white">+</span><span style="color:gray">-</span><span
+                    style="color:white">*#*</span><span style="color:#00b49c">-</span><span style="color:gray">:::  .:-</span><span
+                    style="color:white">+</span><span style="color:#dfdaf1">++</span><span style="color:white">##**</span><span
+                    style="color:gray">.
+                               .  ..:-</span><span style="color:#dfdaf1">+=</span><span
+                    style="color:#00b49c">==</span><span style="color:white">+</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">***#**</span><span style="color:#dfdaf1">++</span><span style="color:white">+</span><span
+                    style="color:gray">-.:. .-</span><span style="color:#00b49c">=</span><span style="color:white">+</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">*##*</span><span style="color:gray">
+                                .. .:</span><span style="color:#00b49c">=</span><span
+                    style="color:#dfdaf1">+++</span><span style="color:white">+**+*#*#**++</span><span
+                    style="color:gray">::.. ..</span><span style="color:#00b49c">-</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">*</span><span style="color:#dfdaf1">+</span><span style="color:white">#*#</span><span
+                    style="color:gray">
+                                  .:--</span><span style="color:#dfdaf1">=</span><span
+                    style="color:white">++</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">#*+###*##+*</span><span style="color:gray">:::.:.:-</span><span
+                    style="color:#00b49c">=</span><span style="color:white">#*</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">#</span><span style="color:gray">.
+                                 ...:::</span><span style="color:#00b49c">-=</span><span
+                    style="color:#dfdaf1">+++</span><span style="color:white">#*#####*</span><span
+                    style="color:gray">-  ....:.-</span><span style="color:#dfdaf1">=</span><span style="color:white">#**</span><span
+                    style="color:gray">
+                               .   .::.:</span><span style="color:#00b49c">-</span><span
+                    style="color:#dfdaf1">=+</span><span style="color:white">++</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">**###</span><span style="color:#dfdaf1">=</span><span
+                    style="color:gray">: :...::::</span><span style="color:#dfdaf1">++</span><span style="color:white">##</span><span
+                    style="color:gray">
+                               .  . ..::</span><span style="color:#00b49c">=-</span><span
+                    style="color:#dfdaf1">+</span><span style="color:gray">-</span><span style="color:white">+</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">**###**</span><span style="color:#dfdaf1">+</span><span
+                    style="color:gray">::. .:::-</span><span style="color:white">**</span><span style="color:#dfdaf1">=</span><span
+                    style="color:gray">
+                                . ......::</span><span style="color:#00b49c">-==</span><span
+                    style="color:#dfdaf1">++</span><span style="color:white">+*#*##*</span><span
+                    style="color:gray">::..:-:.</span><span style="color:#dfdaf1">=</span><span style="color:#00b49c">=</span><span
+                    style="color:#dfdaf1">+</span><span style="color:gray">
+                         .         .  . .::</span><span style="color:#00b49c">-==</span><span
+                    style="color:white">+</span><span style="color:#dfdaf1">+</span><span style="color:white">**</span><span
+                    style="color:#dfdaf1">=</span><span style="color:white">+</span><span style="color:#dfdaf1">+</span><span
+                    style="color:white">+</span><span style="color:#dfdaf1">=</span><span style="color:#00b49c">=</span><span
+                    style="color:gray">:-</span><span style="color:#dfdaf1">+=</span><span style="color:white">**#</span><span
+                    style="color:#dfdaf1">+</span><span style="color:gray">:
+                           .      .. .   ...-</span><span style="color:#00b49c">=</span><span style="color:#dfdaf1">=+</span><span
+                    style="color:#00b49c">=</span><span style="color:white">+</span><span style="color:gray">-.</span><span
+                    style="color:white">*</span><span style="color:#00b49c">=</span><span style="color:white">+</span><span
+                    style="color:#dfdaf1">==</span><span style="color:#00b49c">-==-</span><span style="color:#dfdaf1">==+</span><span
+                    style="color:gray">
+                     .    ...     . .........:-</span><span style="color:#00b49c">=</span><span
+                    style="color:#dfdaf1">+++</span><span style="color:white">+</span><span style="color:#dfdaf1">=</span><span
+                    style="color:#00b49c">=</span><span style="color:gray">:</span><span style="color:#00b49c">-</span><span
+                    style="color:gray">-</span><span style="color:#dfdaf1">+</span><span style="color:white">+++**</span><span
+                    style="color:gray">
+                      .   ...:.. . .. ........:</span><span style="color:#00b49c">-</span><span style="color:white">+*+</span><span
+                    style="color:#dfdaf1">=</span><span style="color:white">+*+</span><span style="color:#dfdaf1">=</span><span
+                    style="color:white">*+</span><span style="color:#dfdaf1">+</span><span style="color:white">+</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">**</span><span style="color:gray">
+                      .. . .:....:.. . . .....:</span><span style="color:#00b49c">=</span><span
+                    style="color:gray">:</span><span style="color:#dfdaf1">==+++</span><span style="color:white">**+###**</span><span
+                    style="color:gray">.
+                        </span><span style="color:#dfdaf1">+=</span><span
+                    style="color:gray">.... .::..::-..:-</span><span style="color:#dfdaf1">=+</span><span
+                    style="color:gray">.::</span><span style="color:#00b49c">--==</span><span style="color:#dfdaf1">=</span><span
+                    style="color:white">*</span><span style="color:#dfdaf1">+</span><span style="color:white">*#####</span><span
+                    style="color:#dfdaf1">+</span><span style="color:gray">.
+                         .</span><span style="color:white">*</span><span style="color:gray">:.:</span><span
+                    style="color:#00b49c">-</span><span style="color:gray">:::</span><span style="color:#00b49c">-</span><span
+                    style="color:#dfdaf1">===</span><span style="color:#00b49c">-</span><span style="color:gray">-</span><span
+                    style="color:#00b49c">-</span><span style="color:#dfdaf1">++</span><span style="color:white">*+</span><span
+                    style="color:#dfdaf1">==</span><span style="color:gray">..:.::</span><span style="color:white">*</span><span
+                    style="color:#dfdaf1">+</span><span style="color:white">*+***</span><span style="color:gray">::
+                           :</span><span style="color:#dfdaf1">=</span><span style="color:white">+</span><span
+                    style="color:gray">::</span><span style="color:#00b49c">-</span><span style="color:gray">::</span><span
+                    style="color:#00b49c">==</span><span style="color:white">+</span><span style="color:#dfdaf1">++</span><span
+                    style="color:#00b49c">=</span><span style="color:white">***</span><span
+                    style="color:gray">. . .. .  .   ::-</span><span style="color:white">#</span><span style="color:gray">
+                             .</span><span style="color:#00b49c">=</span><span style="color:white">**</span><span
+                    style="color:#dfdaf1">=</span><span style="color:gray">..</span><span style="color:#00b49c">=</span><span
+                    style="color:#dfdaf1">=+</span><span style="color:white">***</span><span
+                    style="color:gray">::.. .....      ::</span><span style="color:white">#</span><span
+                    style="color:gray">:        </span><span style="color:white">+</span><span style="color:gray">
+                              .</span><span style="color:#00b49c">=</span><span style="color:#dfdaf1">=</span><span
+                    style="color:white">#</span><span style="color:#dfdaf1">+</span><span style="color:white">+#%***</span><span
+                    style="color:gray">- . .  ..       .--</span><span style="color:white">%</span><span
+                    style="color:gray">         </span><span style="color:white">#%</span><span style="color:gray">
+                              .</span><span style="color:white">%</span><span style="color:#00b49c">-=-</span><span
+                    style="color:white">+#*#%%*</span><span style="color:gray">.. .  ..      .::</span><span
+                    style="color:#00b49c">=</span><span style="color:white">*</span><span style="color:gray">         .</span><span
+                    style="color:white">%</span><span style="color:#dfdaf1">=</span><span style="color:gray">
+                           ...</span><span style="color:white">#*#%%%%%%%%##%</span><span style="color:gray">.:.        :.:-</span><span
+                    style="color:white">%</span><span style="color:gray">           </span><span style="color:white">#%</span><span
+                    style="color:gray">
+                       </span><span style="color:#00b49c">-</span><span style="color:white">#</span><span
+                    style="color:gray">   </span><span style="color:#dfdaf1">=</span><span style="color:white">#</span><span
+                    style="color:gray">.</span><span style="color:white">+</span><span style="color:#dfdaf1">++</span><span
+                    style="color:white">%#</span><span style="color:#dfdaf1">=</span><span style="color:white">#%%%%%%%</span><span
+                    style="color:gray">.      .:-</span><span style="color:white">%#</span><span style="color:#00b49c">=</span><span
+                    style="color:#dfdaf1">=</span><span style="color:gray"> . ..       </span><span
+                    style="color:white">#@</span><span style="color:gray">
+                       .</span><span style="color:white">%+</span><span style="color:gray">   -</span><span
+                    style="color:#00b49c">=</span><span style="color:gray">.</span><span style="color:#dfdaf1">=</span><span
+                    style="color:white">##*%*##%%%%%%</span><span style="color:gray">:: .  :</span><span
+                    style="color:#00b49c">-</span><span style="color:white">%#</span><span
+                    style="color:gray">.....          </span><span style="color:white">#%</span><span style="color:gray">
+                        </span><span style="color:white">%#</span><span style="color:gray">  </span><span
+                    style="color:white">#</span><span style="color:gray"> .</span><span style="color:white">+</span><span
+                    style="color:gray">::</span><span style="color:#dfdaf1">+</span><span style="color:white">%%####%%%%#</span><span
+                    style="color:gray">-.  .:</span><span style="color:#00b49c">-</span><span style="color:white">%</span><span
+                    style="color:#dfdaf1">=</span><span style="color:gray">..:.... .   -.</span><span
+                    style="color:white">%</span><span style="color:gray"> </span><span style="color:white">*%</span><span
+                    style="color:gray">  </span><span style="color:white">*</span><span style="color:gray">
+                        </span><span style="color:white">%%</span><span style="color:gray">     </span><span
+                    style="color:#00b49c">=</span><span style="color:white">%</span><span style="color:gray">::</span><span
+                    style="color:#00b49c">-</span><span style="color:white">#%%%#</span><span style="color:gray">-</span><span
+                    style="color:white">%*%</span><span style="color:#dfdaf1">+</span><span style="color:gray">:. ..</span><span
+                    style="color:white">%</span><span style="color:#dfdaf1">=</span><span
+                    style="color:gray">::::::.:..    :</span><span style="color:#00b49c">=</span><span style="color:gray">  </span><span
+                    style="color:white">*%</span><span style="color:gray">
+                        </span><span style="color:white">%%</span><span style="color:gray">      </span><span
+                    style="color:#dfdaf1">=</span><span style="color:white">#</span><span style="color:gray">--</span><span
+                    style="color:#00b49c">=</span><span style="color:white">#%%%%%%%</span><span style="color:gray">:: :</span><span
+                    style="color:white">%%#</span><span style="color:gray">:::::::...     -</span><span
+                    style="color:#dfdaf1">+</span><span style="color:gray">  </span><span style="color:white">*%</span><span
+                    style="color:gray">  .                </span>
+</code></pre>
+</div>            <nav class="sidebar-nav">
+                                                                </nav>
+            <nav class="sidebar-social">
+                                    <span><a class="sidebar-social-item" href="https://github.com/maxperei"><span class="icon icon--github fa fa-github" aria-hidden="true"></span></a></span>
+                    &middot;                                    <span><a class="sidebar-social-item" href="https://www.linkedin.com/in/maxperei"><span class="icon icon--linkedin fa fa-linkedin" aria-hidden="true"></span></a></span>
+                    &middot;                                    <span><a class="sidebar-social-item" href="https://twitter.com/max_perei"><span class="icon icon--twitter fa fa-twitter" aria-hidden="true"></span></a></span>
+                    &middot;                                    <span><a class="sidebar-social-item" href="https://www.behance.net/maxperei"><span class="icon icon--behance fa fa-behance" aria-hidden="true"></span></a></span>
+                    &middot;                                    <span><a class="sidebar-social-item" href="https://stackoverflow.com/users/5517101/max-perei"><span class="icon icon--stack-overflow fa fa-stack-overflow" aria-hidden="true"></span></a></span>
+                                                </nav>
+            </div>
+</div>
+<div class="content container">
+          <h1 class="page-title">robert haigh – creatures of the deep &middot; unseen worlds</h1>
+      <span class="post-date">Publié le : 11/2017</span>
+      <img src="/images/robert_haigh_creatures_of_the_deep-1200x1200.jpg" />
+      <p>Venons en à Robert Haigh, véritable légende vivante de la musique électronique si on se réfère à l’esprit génial qui caractérise son œuvre, nous a gratifié en Octobre dernier de <em>Creatures of the Deep</em> un album paru sur <strong>Unseen Worlds</strong> et qui s’additionne à une discographie aussi riche que fournie.</p>
+<span id="more"></span>
+<p>Album à la thématique modern classical construit autour de mélodies au piano et qui s’inscrit dans la mouvance de ce qu’il a pu sortir récemment sur <strong>Siren Records</strong> le label de Daisuke Suzuki (artiste japonnais).</p>
+<p>Direction qu’il a souhaité donner à sa musique en 2004 en cessant de produire sous le pseudonyme d’Omni Trio.</p>
+<p>Robert c’est un gars à part, un parcours atypique qui traverse trois décennies, entre l’avant-garde industrielle sous l’alias Sema dans la lignée d’Eno, Bowie et son projet Omni Trio fruit d’une collaboration avec Robert Playford sur son mythique label <strong>Moving Shadow</strong> sur lequel il a été très prolifique (six albums) et qui a donné naissance à l’ambient drum and bass, là vraiment il y a de quoi tirer une révérence.</p>
+<p>Puis, si cela ne suffit pas, je vous enjoins alors d’écouter ses dernières références, comme celle-ci qui trouve une raison entre solennité et mystère et qui corrobore de manière subtile le travail et l’univers de cet artiste d’exception.</p>
+      <p>
+        <a href="/tags/revues/">#Revues</a>&nbsp;
+        <a href="/tags/radiophoniques/">#Radiophoniques</a>&nbsp;
+        <a href="/tags/dephasage/">#Déphasage</a>&nbsp;
+      </p>
+      <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FDephasage%2Fd%C3%A9phasage-166-150318%2F" frameborder="0" ></iframe>
+</div>
+<script src="/js/typewriter.js"></script>
+<script src="/js/tooltip.js"></script>
+<script src="/js/particles.js"></script>
+</body>
+</html>

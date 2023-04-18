@@ -1,0 +1,45 @@
+@media (min-width:48em) {
+  .sidebar {
+    width: 20rem;
+    &-sticky {
+      top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-nav {
+      a {
+        font: {
+          weight: 300;
+        }
+        &.active {
+          &:before {
+            content: '↳ ';
+            position: relative;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  canvas {
+    position: fixed;
+  }
+  .social {
+    text-align: center;
+  }
+}
+
+@media (max-width:24em) {
+  .about {
+    &-cv {
+      .bloc-doc {
+        a {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+/**
+ * Walbaum Grotesk
+ */
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbook.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbook.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgroteskbook.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgroteskbook.woff") format('woff');
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbookitalic.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbookitalic.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgroteskbookitalic.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgroteskbookitalic.woff") format('woff');
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbookbold.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbookbold.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgroteskbookbold.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgroteskbookbold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbookbolditalic.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskbookbolditalic.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgroteskbookbolditalic.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgroteskbookbolditalic.woff") format('woff');
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktext.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktext.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgrotesktext.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgrotesktext.woff") format('woff');
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktextitalic.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktextitalic.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgrotesktextitalic.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgrotesktextitalic.woff") format('woff');
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktextbold.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktextbold.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgrotesktextbold.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgrotesktextbold.woff") format('woff');
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktextbolditalic.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesktextbolditalic.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgrotesktextbolditalic.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgrotesktextbolditalic.woff") format('woff');
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesklight.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesklight.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgrotesklight.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgrotesklight.woff") format('woff');
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesklightitalic.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgrotesklightitalic.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgrotesklightitalic.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgrotesklightitalic.woff") format('woff');
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskblack.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskblack.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgroteskblack.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgroteskblack.woff") format('woff');
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'WalbaumGrotesk';
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskblackitalic.eot");
+  src: url("../fonts/WalbaumGrotesk/walbaumgroteskblackitalic.eot?#iefix") format('embedded-opentype'), url("../fonts/WalbaumGrotesk/walbaumgroteskblackitalic.woff2") format('woff2'), url("../fonts/WalbaumGrotesk/walbaumgroteskblackitalic.woff") format('woff');
+  font-weight: 900;
+  font-style: italic; }
+/**
+ * Walbaum
+ */
+@font-face {
+  font-family: 'Walbaum';
+  src: url("../fonts/Walbaum/walbaum10xlpro.eot");
+  src: url("../fonts/Walbaum/walbaum10xlpro.eot?#iefix") format('embedded-opentype'), url("../fonts/Walbaum/walbaum10xlpro.woff2") format('woff2'), url("../fonts/Walbaum/walbaum10xlpro.woff") format('woff');
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Walbaum';
+  src: url("../fonts/Walbaum/walbaum10xlproitalic.eot");
+  src: url("../fonts/Walbaum/walbaum10xlproitalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Walbaum/walbaum10xlproitalic.woff2") format('woff2'), url("../fonts/Walbaum/walbaum10xlproitalic.woff") format('woff');
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Walbaum';
+  src: url("../fonts/Walbaum/walbaum10xlprobold.eot");
+  src: url("../fonts/Walbaum/walbaum10xlprobold.eot?#iefix") format('embedded-opentype'), url("../fonts/Walbaum/walbaum10xlprobold.woff2") format('woff2'), url("../fonts/Walbaum/walbaum10xlprobold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Walbaum';
+  src: url("../fonts/Walbaum/walbaum10xlprobolditalic.eot");
+  src: url("../fonts/Walbaum/walbaum10xlprobolditalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Walbaum/walbaum10xlprobolditalic.woff2") format('woff2'), url("../fonts/Walbaum/walbaum10xlprobolditalic.woff") format('woff');
+  font-weight: 700;
+  font-style: italic; }
+
+html {
+  font-family: 'WalbaumGrotesk', sans-serif; }
+
+canvas {
+  position: absolute;
+  z-index: -1; }
+
+a, .sidebar .tooltip {
+  color: #00b49c; }
+
+.sidebar {
+  background: transparent; }
+  .sidebar a, .sidebar .tooltip {
+    color: #dfdaf1; }
+  .sidebar h1 {
+    font-family: 'Walbaum', serif;
+    text-shadow: -1px 0 #dfdaf1, 0 1px #dfdaf1, 1px 0 #dfdaf1, 0 -1px #dfdaf1;
+    letter-spacing: 1px;
+    display: inline-block; }
+    .sidebar h1 a, .sidebar h1 .tooltip {
+      color: #000; }
+      .sidebar h1 a:hover, .sidebar h1 .tooltip:hover {
+        text-decoration: none; }
+      .sidebar h1 a span, .sidebar h1 .tooltip span {
+        text-shadow: none;
+        padding-left: 3px;
+        color: #dfdaf1;
+        font-family: 'WalbaumGrotesk', sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem; }
+    .sidebar h1 .typed-cursor {
+      color: #dfdaf1;
+      font-weight: 300;
+      position: relative;
+      bottom: 5px; }
+  .sidebar .tooltip {
+    font-variant: all-small-caps; }
+    .sidebar .tooltip:hover {
+      text-decoration: underline;
+      position: relative;
+      top: 0;
+      cursor: crosshair; }
+      .sidebar .tooltip:hover + .desc {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0; }
+
+.desc {
+  transition: all 300ms ease-in-out;
+  position: relative;
+  bottom: -50px;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  margin-top: 1rem;
+  font-family: 'WalbaumGrotesk', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem; }
+
+.post-date {
+  font-size: 0.75rem; }
+
+.content p {
+  font-family: 'Walbaum', serif;
+  font-size: 0.95rem;
+  line-height: 1.5rem; }
+  .content ul {
+    padding-left: 20px; }
+  .content li {
+    padding-left: 5px;
+    font-family: 'Walbaum', serif;
+    font-size: 0.95rem; }
+
+@media (min-width: 48em) {
+  .sidebar {
+    width: 20rem; }
+    .sidebar-sticky {
+      top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .sidebar-nav a, .sidebar-nav .sidebar .tooltip, .sidebar .sidebar-nav .tooltip {
+      font-weight: 300; }
+      .sidebar-nav a.active:before, .sidebar-nav .sidebar .tooltip.active:before, .sidebar .sidebar-nav .tooltip.active:before {
+        content: '↳ ';
+        position: relative;
+        font-weight: 300; }
+
+  canvas {
+    position: fixed; }
+
+  .social {
+    text-align: center; } }
+
+@media (max-width: 24em) {
+  .about-cv .bloc-doc a:last-child, .about-cv .bloc-doc .sidebar .tooltip:last-child, .sidebar .about-cv .bloc-doc .tooltip:last-child {
+    display: none; } }
+
+.about-cv .bloc-doc {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 0.5rem 1rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  transition: all 300ms ease-in-out; }
+  .about-cv .bloc-doc:hover {
+    border-color: #000; }
+  .about-cv .bloc-doc-header .doc-title {
+    font-size: 1.25rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.3125rem; }
+    .about-cv .bloc-doc-header .doc-meta {
+      color: #adb5bd;
+      font-size: 0.75rem;
+      margin: 0;
+      letter-spacing: -0.017rem;
+      font-family: Consolas, monospace; }
+  .about-cv .bloc-doc-tool {
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 0.2rem; }
+    .about-cv .bloc-doc-tool .button--about {
+      position: relative;
+      padding: 0.25rem 0.5rem;
+      margin: 0 0.5rem;
+      border-radius: 2px;
+      border: 1px #00b49c solid;
+      display: inline-block;
+      overflow: hidden;
+      transition: all 300ms ease-in-out; }
+      .about-cv .bloc-doc-tool .button--about:hover {
+        border-color: #dfdaf1;
+        background-color: #000;
+        color: #000; }
+        .about-cv .bloc-doc-tool .button--about:hover .button__icon {
+          transform: translate3d(0, 0, 0); }
+        .about-cv .bloc-doc-tool .button--about:hover > span {
+          opacity: 0;
+          transform: translate3d(0, 100%, 0); }
+      .about-cv .bloc-doc-tool .button--about:before {
+        content: '';
+        animation: anim-about-1 300ms forwards ease-in;
+        position: absolute;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: #fff;
+        top: -50%;
+        z-index: -1;
+        transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg); }
+      .about-cv .bloc-doc-tool .button--about.button--inverted:hover {
+        background-color: #dfdaf1;
+        color: #dfdaf1; }
+        .about-cv .bloc-doc-tool .button--about.button--inverted:before {
+          background: #00b49c; }
+      .about-cv .bloc-doc-tool .button--about .button__icon {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        color: #dfdaf1;
+        transform: translate3d(0, -200%, 0); }
+      .about-cv .bloc-doc-tool .button--about > span, .about-cv .bloc-doc-tool .button--about .button__icon {
+        transition: transform 300ms;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+      .about-cv .bloc-doc-tool .button--about-up:before {
+        animation: anim-about-2 300ms forwards ease-in;
+        transform: translate3d(0, 100%, 0) rotate3d(0, 0, 1, 10deg); }
+        .about-cv .bloc-doc-tool .button--about-up .button__icon {
+          transform: translate3d(0, 200%, 0); }
+        .about-cv .bloc-doc-tool .button--about-up:hover > span {
+          transform: translate3d(0, -100%, 0); }
+
+@keyframes anim-about-1 {
+  50% {
+    transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
+    animation-timing-function: ease-out; }
+
+  100% {
+    transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg); } }
+
+@keyframes anim-about-2 {
+  50% {
+    transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
+    animation-timing-function: ease-out; }
+
+  100% {
+    transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg); } }
+
+.ascii-art {
+  text-align: center;
+  scale: 0;
+  animation-duration: 300ms;
+  animation-fill-mode: both; }
+  .ascii-art pre {
+    background: transparent;
+    font-size: 6px;
+    line-height: 1.3;
+    padding: 0; }
+
+.bounce {
+  animation-name: bounce; }
+
+.debounce {
+  animation-name: debounce; }
+
+@keyframes bounce {
+  to {
+    scale: 1; } }
+
+@keyframes debounce {
+  from {
+    scale: 1; }
+
+  to {
+    scale: 0; } }
