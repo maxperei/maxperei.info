@@ -34,4 +34,4 @@ jobs:
                 uses: JamesIves/github-pages-deploy-action@v4
                 with:
                     folder: _site
-                    repository-name: maxperei/maxperei.github.io
+                    branch: gh-pages
